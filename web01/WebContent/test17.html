@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Selector test</title>
+
+<style>
+
+
+</style>
+
+</head>
+
+<body>
+
+<div id="d1"></div>
+
+
+<script>
+var e1 = document.createElement("h1");
+
+
+// add the tag to DOM tree
+
+var e2 = document.getElementById('d1');
+
+e2.appendChild(e1);
+
+// add content to tag
+
+//1) 
+e1.innerHTML="aha!.....";
+
+
+var content =document.createTextNode("dah...complext...");
+e1.appendChild(content);
+
+
+document.getElementById('d1').onclick=function(){e2.removeChild(e1)};
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Selector test</title>
+
+<style>
+
+div {
+	border : 1px solid red;
+	padding: 20px;
+	margin:20px;  /* */
+} 
+
+
+
+</style>
+
+</head>
+<body>
+
+<h1>Event handling</h1>
+
+<!-- 
+
+
+
+
+ -->
+
+
+<div id="d1">
+	<div id="d11">
+	<button id="btn1" onclick="var a= 20; a +=100; console.log('okok'); alert('dah!' +a);">button1</button>
+	
+	</div>
+		<div id="d12">
+			<button id="btn2">button2</button>
+		
+	</div>
+	
+
+</div>
+
+<div id="d2">
+	<div id="d21">
+	<button id="btn3">button3</button>
+	
+	</div>
+		<div id="d22">
+			<button id="btn4">button4</button>
+		
+	</div>
+
+</div>
+
+
+
+
+<script>
+
+"use strict";
+//1 registering event listner(function)
+
+// onclick="javascript code"
+
+//2 addEventListener() to the tag of document object
+//	document object 
+// window, navigator, history, location, docuemnt,
+
+var b2 = document.getElementById("btn2");
+
+b2.addEventListener("click",myclick);
+
+function myclick(event){
+	var a=20;
+	a+= 200;
+	console.log("okokok" + a);
+	alert("this is it" + a);
+}
+
+
+//3 registering listner by using anonymous function
+
+var b3 = document.getElementById("btn3");
+
+b3.addEventListener("click",function(event){
+	var a=20;
+	a+= 200;
+	console.log("okokok" + a);
+	alert("this is it" + a);
+});
+
+
+// 4. event bubbling 
+// 
+
+document.getElementById("btn4")
+	.addEventListener("click",function(event){
+	event.stopPropagation();
+		console.log("button4" );
+	
+});
+
+document.getElementById("d22")
+.addEventListener("click",function(event){
+console.log("d2__________1");
+//event.stopPropagation();
+event.stopImmediatePropagation();
+});
+
+
+document.getElementById("d22")
+.addEventListener("click",function(event){
+console.log("d2__________2");
+});
+
+document.getElementById("d22")
+.addEventListener("click",function(event){
+console.log("d2__________2");
+});
+
+document.getElementById("d2")
+.addEventListener("click",function(event){
+console.log("d2##########");
+});
+
+document.getElementById("d2").onclick=function(event){
+	
+	alert("in case of just 1 event");
+}
+
+</script>
+</body>
+</html>

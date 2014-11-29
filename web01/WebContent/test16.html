@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Selector test</title>
+
+<style>
+
+
+</style>
+
+</head>
+
+<body>
+<script>
+
+var obj ={
+	name:"Smith",
+	age: 20,
+	print: function(){
+		
+	},
+	friends: [{name:"sssmith",age:20},
+	          {name:"sssmith",age:20},
+	          {name:"sssmith",age:20}],
+	address:{
+		postno: '111-1111',
+		base: 'kyunggi',
+		detail: 'youngin'		
+	}
+		
+};
+// condider javascript object as a folder 
+
+var obj2 = new Object();
+obj2.name="Smith";
+obj2.age=30;
+obj2.print = function(){
+obj2.friends=[];
+obj2.friends[0]=new Object();
+obj2.friends[0].name="smith";
+obj2.friends[0].age=22;
+
+obj2.address = new Object();
+obj2.address.postno ='111-1111';
+obj2.address.base ='seoul';
+obj2.address.detail ='gangnam';
+
+}
+
+var obj3 = new Object();
+obj3.child = new Object();
+obj3.child.child = new Object();
+obj3.child.child.child = new Object();
+obj3.child.child.child.child = new Object();
+obj3.child.child.child.child.child = new Object();
+obj3.child.child.child.child.child.name="smith";
+console.log(obj3);
+
+
+
+
+</script>
+
+
+</body>
+</html>
