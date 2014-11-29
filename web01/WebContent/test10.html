@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Selector test</title>
+
+<style>
+
+
+</style>
+
+</head>
+<body>
+
+<h1>javascript basic2</h1>
+
+<!-- 
+
+function declaration
+
+anonymouse function
+
+
+ -->
+
+
+<script>
+
+function plus(a,b) {
+	
+	return a+b;
+}
+
+var result = plus(10,20);
+
+console.log(result);
+
+// arguments  : hidden parameter array
+
+function minus(a,b){
+	return arguments[0] - arguments[1];
+	
+}
+
+console.log(minus(10,20));
+
+// free to add parameter value regardless of the declaration of arguments 
+
+function multiple(a,b){
+	return a*b* arguments[2]*arguments[3];
+	
+}
+
+console.log(multiple(2,3,4,5,10000));
+
+
+</script>
+</body>
+</html>

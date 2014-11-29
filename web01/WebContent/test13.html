@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Selector test</title>
+
+<style>
+
+
+</style>
+
+</head>
+<body>
+
+<h1>javascript basic2</h1>
+
+<!-- 
+
+
+anonymous function is considered as statment
+
+ -->
+
+
+<script>
+
+"use strict";
+// javascript object creation
+// clone javascript object template
+
+// there is no class but function
+// 1) prepare memory
+// 2) call object function
+//     ==> add variable and method
+// 3)developer add needed vairable or function
+
+
+
+var obj1 = new Object();
+
+console.log(obj1.toString());
+
+// 
+
+var obj2 = new Object();
+obj2.name = "Smith";
+
+//obj2["ddkk dddk ddd"]="ddd dddd ddd";
+
+obj2.age= 20;
+obj2.print = function(){
+	
+	// when referring to the function member, need to add 'this';
+	console.log(this.name, this.age);
+};
+
+
+obj2.print();
+
+</script>
+</body>
+</html>
