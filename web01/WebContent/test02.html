@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+/*
+	selector{style name: value;}
+	
+	1)tag    tag name   ex) p{}
+	2)group		 .group_name   .header{}
+	3)id		#id{} 
+	4)children   selector > selector{}
+	5)decendants  selector childeren_selector
+	6)multiple element  selector,selector,
+*/
+		
+	div:{
+		border: 1px solid red;
+	}
+	
+	h1:{
+		border: 1px solid blue;
+	}
+	
+	p:{
+		border: 1px solid black;
+	}
+	
+	a, span:{
+		border: 1px solid green;
+	}
+	
+	
+</style>
+
+
+</head>
+<body>
+<h1> CSS declaration</h1>
+<!-- 
+
+HTML의역할: UI레이아웃 생성
+CSS: 화면의 모양을 지정
+Javascript: 화면을 제어
+
+
+block: 라인전체를 점유하는 컴포넌트
+	예) h1,.. p, div,
+inline: 라인의 삽입
+	예) b, i, address, span
+ -->
+
+<div > <!--  UI를 그룹핑 -->
+<h1 > title</h1>
+<p >content <b>bold</b>
+<a href="http://www.daum.net" >daum</a>
+</p>
+<h1> title</h1>
+<p>content <span>test</span>test</p>
+</div>
+
+
+</body>
+</html>

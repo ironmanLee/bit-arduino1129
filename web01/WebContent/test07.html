@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Selector test</title>
+
+<style>
+
+/* absolute
+	nearest ascendant (absolute, fixed, relative)
+	body if there are no element with absolute, fixed, relative position.
+	
+	absolute = ascendant
+	fixed = browser, floated
+	relative = the standard position of absolute
+*/
+
+#header{
+	height:40px;
+	background-color: yellow;
+}
+#sidebar{
+	float:left;
+	width: 160px;
+	height: 600px;
+		background-color: gray;
+}
+
+#content1,#content2{
+	width: 600px;
+	border: 1px solid black;
+	margin-left: 165px;
+	padding: 10px;
+}
+
+#footer{
+	clear:left;
+	height: 40px;
+	background-color: blue;
+}
+
+p{border: 1px dotted lightgray;}
+
+#img1{border: 1px solid gray;
+	position: absolute;
+	left:50px;
+	top:70px;
+	
+	}
+
+#img2{border: 1px solid gray;
+	position: fixed;
+	left:50px;
+	top:70px;
+	
+	}
+	
+#content1{
+	position:relative;
+	left:-30px;
+	top: -30px;
+}
+
+</style>
+
+</head>
+<body>
+<div id="header">
+</div>
+<div id="sidebar">
+</div>
+<div id="content1">
+<p>A deliverable of the HTML5Apps project, this edition includes changes and additions since July 2014, notably emerging work such as the Second Screen Presentation Working Group API to request display of content on an external screen, a draft API from the Web Bluetooth Community Group, Device APIs Working Group work on a generic pattern for sensors APIs, as well as work on an API to manage permissions across other APIs. Learn more about the Web and Mobile Interest Group.</p>
+<p>A deliverable of th
+e HTML5Apps project, this
+ edition includes changes and additions since J
+ uly 2014, notably emerging work such as the Second Screen Presentation Working Group API to request display of content on an external screen, a draft API from the Web Bluetooth Community Group, Device APIs Working Group work on a generic pattern for sensors APIs, as well as work on an API to manage permissions across other APIs. Learn more about the Web and Mobile Interest Group.
+ 
+ <img id="img1" src="http://icon.daumcdn.net/w/icon/1312/19/152729032.png">
+ </p>
+ 
+</div>
+<div id="content2">
+<p>A deliverable of the HTML5Apps project, this edition includes changes and additions since July 2014, notably emerging work such as the Second Screen Presentation Working Group API to request display of content on an external screen, a draft API from the Web Bluetooth Community Group, Device APIs Working Group work on a generic pattern for sensors APIs, as well as work on an API to manage permissions across other APIs. Learn more about the Web and Mobile Interest Group.</p>
+<p>A deliverable of the HTML5Apps project, this edition includes changes and additions since July 2014, notably emerging work such as the Second Screen Presentation Working Group API to request display of content on an external screen, a draft API from the Web Bluetooth Community Group, Device APIs Working Group work on a generic pattern for sensors APIs, as well as work on an API to manage permissions across other APIs. Learn more about the Web and Mobile Interest Group.</p>
+
+</div>
+<div id="footer">
+all rights reserved
+</div>
+
+<img id="img2" src="http://icon.daumcdn.net/w/icon/1312/19/152729032.png">
+
+</body>
+</html>

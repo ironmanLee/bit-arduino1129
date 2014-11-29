@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Selector test</title>
+<style>
+h2{color: red;}
+h1,h3{text-decoration: underline;}	
+
+.g01{
+	font-style: italic;
+	border-left: 10px solid blue;
+	}
+.g02{
+	font-style: bold;
+	border-top: 2px dashed red;
+	}
+	
+.g01, .g02{
+	background-color: yellow;
+}
+
+#id01{
+	text-decoration: line-through;
+}
+
+</style>
+
+
+</head>
+<body>
+<h1> CSS declaration</h1>
+
+
+<div> <!--  UI를 그룹핑 -->
+<h1 class="g02">CSS selector</h1>
+<h1 class="g01 g02">test1</h1>
+<h1>test1</h1>
+<h2 id="id01">test2</h2>
+<h2 class="g01 g02">test2</h2>
+<h3 class="g01">test3</h3>
+<h3>test3</h3>
+
+</div>
+
+</body>
+</html>

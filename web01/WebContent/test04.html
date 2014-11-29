@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Selector test</title>
+
+<style>
+/* direct child component*/
+
+/*
+#header > a {
+background-color: red;
+color:white;
+}
+*/
+
+/* decendant component*/
+/*
+#header a {
+background-color: blue;
+color:white;
+}
+*/
+
+/* conditions */
+
+/*
+a.menu.g01{
+background-color: red;
+}
+*/
+
+
+
+</style>
+
+
+</head>
+<body>
+
+<!--  -->
+
+<div id="header">
+	<a href="#">company logo</a>
+	<div id="menu-bar">
+		<a class="menu" href="#">menu1</a>
+		<a class="menu g01" href="#">menu2</a>
+		<a class="menu" href="#">menu3</a>
+		<button class="menu g01" href="#">menu4</button>
+		
+	</div>
+</div>
+
+<div id="content">
+<h1>title</h1>
+<p>content</p>
+<a href="#">test</a>
+</div>
+
+<div id="footer">
+<p> copyright and address </p>
+</div>
+
+<!-- 
+DOM tree: webbrowser interprets html document and manage internal component as tree.
+html component tree structure
+component rendered on windows
+
+
+
+
+Document 
+ -> head
+ 	->meta
+ 	->title
+ 	->style
+ -> body
+	->div
+		->a
+		->a
+		->a
+		->a
+	->div
+		->h1
+		->p
+	->div
+		->address
+ -->
+</body>
+</html>
